@@ -13,7 +13,7 @@ pnpm add adonis-ssg
 ## Features
 
 - Simply adds a `node ace prerender:routes` command
-- Follows a similar prerendering pattern to [Astro](https://astro.build/)
+- Follows a similar prerendering pattern to [Astro](https://docs.astro.build/en/core-concepts/routing/#static-ssg-mode)
 - Enables prerendering for dynamic routes
 - Mix prerendered and non prerendered
 - Application wide prerendering can be defined in one `getStaticPaths` function
