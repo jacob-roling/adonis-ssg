@@ -10,6 +10,9 @@
     "build": "unbuild"
   },
   "keywords": [],
+  "exports": {
+    "./commands": "./dist/commands"
+  },
   "author": "Jacob Roling <admin@composedigital.agency> (https://composedigital.agency)",
   "license": "ISC",
   "devDependencies": {
