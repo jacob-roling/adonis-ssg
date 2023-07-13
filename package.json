@@ -1,7 +1,7 @@
 {
   "name": "adonis-ssg",
-  "version": "1.0.7",
-  "description": "Prerender routes to static HTML for AdonisJS.",
+  "version": "1.0.8",
+  "description": "Prerender routes to static HTML for AdonisJS",
   "type": "module",
   "main": "./dist/index.cjs",
   "types": "./dist/index.d.ts",
@@ -25,7 +25,7 @@
     }
   },
   "author": "Jacob Roling <admin@composedigital.agency> (https://composedigital.agency)",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@adonisjs/core": "^5.9.0",
     "@types/node": "^20.4.1",
@@ -39,7 +39,7 @@
   ],
   "adonisjs": {
     "commands": [
-      "adonis-ssg/dist/commands/prerender.mjs"
+      "adonis-ssg/dist/index.cjs"
     ]
   }
 }
