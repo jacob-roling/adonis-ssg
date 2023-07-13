@@ -1,6 +1,6 @@
 {
   "name": "adonis-ssg",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Prerender routes to static HTML for AdonisJS.",
   "type": "module",
   "main": "./dist/index.cjs",
