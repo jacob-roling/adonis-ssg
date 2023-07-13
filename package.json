@@ -12,7 +12,13 @@
   },
   "keywords": [],
   "exports": {
-    "./commands": "./dist/commands"
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./commands": {
+      "import": "./dist/commands/index.mjs"
+    }
   },
   "author": "Jacob Roling <admin@composedigital.agency> (https://composedigital.agency)",
   "license": "ISC",
