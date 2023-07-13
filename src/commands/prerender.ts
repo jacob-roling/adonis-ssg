@@ -46,7 +46,7 @@ export default class Prerender extends BaseCommand {
 
     const { getStaticPaths } = await import(
       this.application.makePath(
-        this.application.directoriesMap.get("staticPaths") as any
+        this.application.directoriesMap.get("ssg") as any
       ) as any
     );
 
@@ -59,7 +59,7 @@ export default class Prerender extends BaseCommand {
       ({ pattern, methods }) =>
         !pattern.includes("*") &&
         methods.includes("GET") &&
-        Object.keys(staticPaths).includes(pattern.slice(1))
+        Object.keys(staticPaths).includes(pattern)
     );
 
     const HttpContext = this.application.container.use(
@@ -71,7 +71,7 @@ export default class Prerender extends BaseCommand {
         const { pattern, meta } = route;
         const { params } = route as any;
         if (params.length > 0) {
-          const paths = await staticPaths[pattern.slice(1)]();
+          const paths = await staticPaths[pattern]();
 
           for (let i = 0; i < paths.length; i++) {
             const ctx = HttpContext.create(pattern, paths[i].params);
