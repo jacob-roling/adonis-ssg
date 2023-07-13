@@ -47,11 +47,13 @@ Add the file exporting `getStaticPaths` to `directories` in `.adonisrc.json` und
 }
 ```
 
-Add adonis-ssg commands to `.adonisrc.json`
+Run `node ace configure adonis-ssg` to add adonis-ssg commands to `.adonisrc.json`
+
+It will make the following change.
 
 ```json
 {
-  "commands": ["adonis-ssg/commands"]
+  "commands": ["adonis-ssg/dist/index.cjs"]
 }
 ```
 
