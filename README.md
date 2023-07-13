@@ -98,10 +98,9 @@ export function getStaticPaths() {
 }
 ```
 
-Add prerender to build command
+Add prerender to build command to `package.json`
 
 ```json
-// Package.json
 {
   "scripts": {
     "build": "node ace prerender:routes && node ace build --production"
